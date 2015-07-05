@@ -5,6 +5,11 @@ describe "Home page" do
     visit '/static_pages/home'
     expect(page).to have_content('StaticPages')
   end
+
+  it "'StaticPages'とtitle要素に書いてあるかを確認する" do
+    visit '/static_pages/home'
+    expect(page).to have_title('FirstApp')
+  end
 end
 
 describe "Help page" do
