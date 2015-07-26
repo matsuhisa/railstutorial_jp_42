@@ -24,3 +24,6 @@ doc/
 .DS_Store
 .idea
 .secret
+
+bs-config.js
+Procfile

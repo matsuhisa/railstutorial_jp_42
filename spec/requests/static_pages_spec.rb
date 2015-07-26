@@ -6,9 +6,9 @@ describe "Home page" do
     expect(page).to have_content('StaticPages')
   end
 
-  it "'StaticPages'とtitle要素に書いてあるかを確認する" do
+  it "'home'とtitle要素に書いてあるかを確認する" do
     visit '/static_pages/home'
-    expect(page).to have_title('FirstApp')
+    expect(page).to have_title('home')
   end
 end
 
