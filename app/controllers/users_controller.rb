@@ -4,7 +4,12 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.json
   def index
-    @users = User.all
+    if request_is_smartphone?
+      @users = User.all.limit(1)
+    else
+      @users = User.all
+    end
+
   end
 
   # GET /users/1

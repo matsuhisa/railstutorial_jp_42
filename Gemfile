@@ -11,6 +11,8 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 
+gem 'rack-user_agent'
+
 group :development, :test do
   gem 'sqlite3'
   gem 'byebug'
