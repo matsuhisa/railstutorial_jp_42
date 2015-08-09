@@ -9,11 +9,10 @@ class ApplicationController < ActionController::Base
 
   private
   def set_request_variant
-    logger.debug("デバイス : #{request}")
-    logger.debug("デバイス : #{request.device_type}")
-    logger.debug("デバイス : #{request.os}")
+    logger.debug("type : #{request.device_type}")
+    logger.debug("os : #{request.os}")
 
-    if request_is_smartphone?
+    if request.from_ipod?
       request.variant = :smartphone
     end
 

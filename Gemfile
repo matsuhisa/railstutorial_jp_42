@@ -11,7 +11,9 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 
-gem 'rack-user_agent'
+#gem 'rack-user_agent'
+gem 'rack-user_agent', :git => 'git@github.com:matsuhisa/rack-user_agent.git',
+                       :branch => "from_ipod"
 
 group :development, :test do
   gem 'sqlite3'

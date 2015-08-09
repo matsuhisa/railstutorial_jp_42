@@ -1,3 +1,12 @@
+GIT
+  remote: git@github.com:matsuhisa/rack-user_agent.git
+  revision: f51248607485df52b80d861deb7c01ca6564d097
+  branch: from_ipod
+  specs:
+    rack-user_agent (0.3.0)
+      rack (~> 1.5)
+      woothee (~> 1.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -87,9 +96,6 @@ GEM
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
-    rack-user_agent (0.3.0)
-      rack (~> 1.5)
-      woothee (~> 1.0.0)
     rails (4.2.3)
       actionmailer (= 4.2.3)
       actionpack (= 4.2.3)
@@ -186,7 +192,7 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)
   jquery-rails
-  rack-user_agent
+  rack-user_agent!
   rails (= 4.2.3)
   rspec-rails
   sass-rails (~> 5.0)
